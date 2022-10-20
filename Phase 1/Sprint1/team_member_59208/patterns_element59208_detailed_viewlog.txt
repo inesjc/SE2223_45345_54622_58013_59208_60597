@@ -1,5 +1,4 @@
 Identify the reviewer’s Name and List of comments to be addressed / points to be corrected/ suggestions
 
-Reviewer's name:
-
-Reviews:
+ Reviewer's name: Inês Carvalho
+ Reviews: Looks good to me
