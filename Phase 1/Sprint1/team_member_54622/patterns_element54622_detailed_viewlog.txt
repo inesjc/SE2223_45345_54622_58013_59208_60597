@@ -2,3 +2,6 @@ Identify the reviewer’s Name and List of comments to be addressed / points to 
 
 Reviewer's Name:Simão Carrasco
 Pattern 2: It's not clear how this method allows access to a previous state of an object
+
+Reviewer's Name: Inês Carvalho
+Pattern 3: Explanation seems very generic for what the pattern does
