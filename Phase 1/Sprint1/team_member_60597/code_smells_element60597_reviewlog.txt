@@ -1,1 +1,4 @@
  identify the reviewer’s Name and List of comments to be addressed / points to be corrected/ suggestions
+
+ Reviewer's Name: Simão Carrasco
+ Code Smell 2: Repeated pairs of the same arguments on multiple functions, so it makes sense to identify this as a code smell

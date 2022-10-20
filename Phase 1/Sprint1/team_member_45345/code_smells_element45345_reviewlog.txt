@@ -1,1 +1,4 @@
  identify the reviewer’s Name and List of comments to be addressed / points to be corrected/ suggestions
+
+ Reviewer's Name:Simão Carrasco
+ Code Smell 2:Unnecessary use of a lot of primitive types, thus it makes sense to identify this as a code smell

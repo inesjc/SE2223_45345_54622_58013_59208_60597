@@ -1,1 +1,4 @@
  identify the reviewer’s Name and List of comments to be addressed / points to be corrected/ suggestions
+
+ Reviewer's Name:Simão Carrasco
+ Code smell 2: A chunk of code exists but is no longer useful, so it makes sense to identify this as a code smell
