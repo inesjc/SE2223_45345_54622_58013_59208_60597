@@ -2,3 +2,6 @@
 
 Reviewer's Name: Simão Carrasco
 Pattern 2: There is always only one instance of the class, so it makes sence to identify it as a singleton.
+
+Reviewer's Name: Inês Carvalho
+Looks good to me
