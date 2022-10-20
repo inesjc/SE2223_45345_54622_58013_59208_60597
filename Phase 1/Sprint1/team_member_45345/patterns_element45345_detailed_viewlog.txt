@@ -1,1 +1,4 @@
 Identify the reviewer’s Name and List of comments to be addressed / points to be corrected/ suggestions
+
+Reviewer's Name:Simão Carrasco
+Pattern 1: The subclasses both have common methods inherited from the template class, so it makes sense to identify this as an instance of a template method.

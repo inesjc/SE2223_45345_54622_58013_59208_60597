@@ -1,1 +1,4 @@
 Identify the reviewer’s Name and List of comments to be addressed / points to be corrected/ suggestions
+
+Reviewer's Name:Simão Carrasco
+Pattern 2: It's not clear how this method allows access to a previous state of an object
