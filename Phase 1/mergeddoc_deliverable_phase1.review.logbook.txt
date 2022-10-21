@@ -1,0 +1,78 @@
+CODE PATTERNS:
+
+* Team element 45345 - Inês Carvalho
+
+Reviewer's Name:Simão Carrasco
+Pattern 1: The subclasses both have common methods inherited from the template class, so it makes sense to identify this as an instance of a template method.
+
+Reviewer's Name: Pedro Catarino
+Pattern 2: The pattern was well identified and explained.
+
+* Team element 54622 - Tiago Coelho
+
+Reviewer's Name:Simão Carrasco
+Pattern 2: It's not clear how this method allows access to a previous state of an object
+
+Reviewer's Name: Inês Carvalho
+Pattern 3: Explanation seems very generic for what the pattern does
+
+* Team element 58013 - Rodrigo Lopes
+
+----
+
+* Team element 59208 - Simão Carrasco
+
+ Reviewer's name: Inês Carvalho
+ Reviews: Looks good to me
+
+ Reviewer's name: Pedro Catarino
+ Pattern 1: Everything seems to be correct.
+
+* Team element 60597 - Pedro Catarino
+
+ Reviewer's Name: Simão Carrasco
+ Pattern 2: There is always only one instance of the class, so it makes sence to identify it as a singleton.
+
+ Reviewer's Name: Inês Carvalho
+ Looks good to me
+
+--------------------------------------------------------------------------------------------------------------------
+
+CODE SMELLS:
+
+* Team element 45345 - Inês Carvalho
+
+ Reviewer's Name:Simão Carrasco
+ Code Smell 2:Unnecessary use of a lot of primitive types, thus it makes sense to identify this as a code smell
+
+ Reviewer's Name: Pedro Catarino
+ Code Smell 3: Everything seems good.
+
+* Team element 54622 - Tiago Coelho
+
+  Reviewer's Name:Simão Carrasco
+  Code smell 2: A chunk of code exists but is no longer useful, so it makes sense to identify this as a code smell
+
+  Reviewer's name: Inês Carvalho
+  Reviews: Looks good to me
+
+* Team element 58013 - Rodrigo Lopes
+
+----
+
+* Team element 59208 - Simão Carrasco
+
+ Reviewer's name: Inês Carvalho
+ Reviews: Looks good to me
+
+ Reviewer's name: Pedro Catarino
+ Reviewing code smell 1: Correct code smell identification and explanation, some typing errors to be corrected - "which" in the explanation section and "functon" in the refactoring section
+
+* Team element 60597 - Pedro Catarino
+
+ Reviewer's Name: Simão Carrasco
+ Code Smell 2: Repeated pairs of the same arguments on multiple functions, so it makes sense to identify this as a code smell
+
+ Reviewer's name: Inês Carvalho
+ Reviews: Looks good to me
+
