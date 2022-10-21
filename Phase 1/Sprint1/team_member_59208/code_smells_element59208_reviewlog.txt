@@ -4,5 +4,5 @@
  Reviews: Looks good to me
  
  Reviewer's name: Pedro Catarino
- Reviewing code smell 1: Correct code smell identification and explanation, some grammar errors to be corrected - "wich" in the explanation section and "functon" in the refactoring section
+ Reviewing code smell 1: Correct code smell identification and explanation, some typing errors to be corrected - "wich" in the explanation section and "functon" in the refactoring section
  
