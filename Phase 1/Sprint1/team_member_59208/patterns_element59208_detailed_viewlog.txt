@@ -4,4 +4,4 @@ Identify the reviewer’s Name and List of comments to be addressed / points to 
  Reviews: Looks good to me
  
  Reviewer's name: Pedro Catarino
- Pattern 1: Everything seems correct.
+ Pattern 1: Everything seems to be correct.
