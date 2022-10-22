@@ -6,3 +6,5 @@
  Reviewer's name: Pedro Catarino
  Reviewing code smell 1: Correct code smell identification and explanation, some typing errors to be corrected - "wich" in the explanation section and "functon" in the refactoring section
  
+Reviewer´s Name: Tiago Coelho
+This code is duplicated and is used many times throughout the code. It can make the code confusing and make the programmer lose his mind. Should be created a new function, and whenever it is necessary to do this task, we call this new function.
