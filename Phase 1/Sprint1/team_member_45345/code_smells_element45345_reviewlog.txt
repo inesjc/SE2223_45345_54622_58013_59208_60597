@@ -5,3 +5,6 @@
  
  Reviewer's Name: Pedro Catarino
  Code Smell 3: Everything seems good.
+
+Reviewer´s Name: Tiago Coelho
+The class appears to be an abstract class. So we should implement new classes that extend the main class of shape, and those new classes that specify the different shapes. With this, the code would be better organized and more readable for programmers who read it.
