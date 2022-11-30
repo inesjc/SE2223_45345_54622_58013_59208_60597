@@ -72,6 +72,8 @@ public abstract class TreeTableContainer<ModelObject, TreeTableClass extends GPT
   private GPAction myPropertiesAction;
   private GPAction myDeleteAction;
 
+  private GPAction myCurrentDateTasksNumberAction;
+
   private class ExpandCollapseAction extends GPAction {
     ExpandCollapseAction() {
       super("tree.expand");
@@ -337,7 +339,19 @@ public abstract class TreeTableContainer<ModelObject, TreeTableClass extends GPT
   public GPAction getDeleteAction() {
     return myDeleteAction;
   }
+  @Override
+  public GPAction getCurrentDateTasksNumberAction() {
+    return myCurrentDateTasksNumberAction;
+  }
 
+  void setArtefactActions(GPAction newAction, GPAction propertiesAction, GPAction deleteAction, GPAction currentDateTasksNumberAction) {
+    myNewAction = newAction;
+    myPropertiesAction = propertiesAction;
+    myDeleteAction = deleteAction;
+    myCurrentDateTasksNumberAction = currentDateTasksNumberAction;
+    myTreeTable.setNewRowAction(myNewAction);
+    myTreeTable.setRowPropertiesAction(myPropertiesAction);
+  }
   void setArtefactActions(GPAction newAction, GPAction propertiesAction, GPAction deleteAction) {
     myNewAction = newAction;
     myPropertiesAction = propertiesAction;

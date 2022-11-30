@@ -1032,4 +1032,19 @@ public class TaskManagerImpl implements TaskManager {
   public DependencyGraph getDependencyGraph() {
     return myDependencyGraph;
   }
+
+  public int getCurrentDateTasksNumber() {
+    Task[] tasks = this.getTasks();
+    int result = 0;
+    Date currentDate = Date.from(java.time.Instant.now());
+    for (int i = 0; i < tasks.length ; i++) {
+      Task task = tasks[i];
+      Date taskStartDate = task.getStart().getTime();
+      Date taskEndDate = task.getEnd().getTime();
+      if (taskStartDate.compareTo(currentDate) <= 0 && taskEndDate.compareTo(currentDate) >= 0) {
+        result++;
+      }
+    }
+    return result;
+  }
 }

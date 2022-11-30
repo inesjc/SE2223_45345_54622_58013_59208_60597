@@ -61,7 +61,7 @@ public interface TreeUiFacade<T> {
   GPAction getPropertiesAction();
 
   GPAction getDeleteAction();
-
+  GPAction getCurrentDateTasksNumberAction();
   void startDefaultEditing(T modelElement);
   void stopEditing();
   AbstractAction[] getTreeActions();

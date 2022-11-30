@@ -25,8 +25,8 @@ import biz.ganttproject.core.option.EnumerationOption;
 import biz.ganttproject.core.option.StringOption;
 import biz.ganttproject.core.time.TimeDuration;
 import biz.ganttproject.core.time.TimeUnit;
-import biz.ganttproject.customproperty.CustomPropertyDefinition;
-import biz.ganttproject.customproperty.CustomPropertyManager;
+import net.sourceforge.ganttproject.CustomPropertyDefinition;
+import net.sourceforge.ganttproject.CustomPropertyManager;
 import net.sourceforge.ganttproject.GanttTask;
 import net.sourceforge.ganttproject.ProjectEventListener;
 import net.sourceforge.ganttproject.resource.HumanResource;
@@ -34,7 +34,6 @@ import net.sourceforge.ganttproject.resource.HumanResourceManager;
 import net.sourceforge.ganttproject.task.Task.Priority;
 import net.sourceforge.ganttproject.task.algorithm.AlgorithmCollection;
 import net.sourceforge.ganttproject.task.algorithm.DependencyGraph;
-import biz.ganttproject.core.model.task.ConstraintType;
 import net.sourceforge.ganttproject.task.dependency.TaskDependencyCollection;
 import net.sourceforge.ganttproject.task.dependency.TaskDependencyConstraint;
 import net.sourceforge.ganttproject.task.event.TaskListener;
@@ -44,19 +43,12 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Map;
 
-import static net.sourceforge.ganttproject.storage.ProjectDatabase.*;
-
 /**
  * @author bard
  */
 public interface TaskManager {
-  enum EventSource {
-    UNDEFINED,
-    USER
-  }
   abstract class TaskBuilder {
     String myName;
-    String myUid;
     Integer myId;
     Date myStartDate;
     TimeDuration myDuration;
@@ -72,7 +64,6 @@ public interface TaskManager {
     Priority myPriority;
     Task myPrototype;
     BigDecimal myCost;
-    EventSource mySource = EventSource.UNDEFINED;
 
     public TaskBuilder withColor(Color color) {
       myColor = color;
@@ -96,11 +87,6 @@ public interface TaskManager {
 
     public TaskBuilder withExpansionState(boolean isExpanded) {
       this.isExpanded = isExpanded;
-      return this;
-    }
-
-    public TaskBuilder withUid(String uid) {
-      myUid = uid;
       return this;
     }
 
@@ -158,10 +144,6 @@ public interface TaskManager {
       return this;
     }
 
-    public TaskBuilder withSource(EventSource source) {
-      mySource = source;
-      return this;
-    }
     public abstract Task build();
   }
 
@@ -197,7 +179,7 @@ public interface TaskManager {
 
   AlgorithmCollection getAlgorithmCollection();
 
-  TaskDependencyConstraint createConstraint(ConstraintType constraintType);
+  TaskDependencyConstraint createConstraint(TaskDependencyConstraint.Type constraintType);
 
   GPCalendarCalc getCalendar();
 
@@ -208,12 +190,7 @@ public interface TaskManager {
   public class Access {
     public static TaskManager newInstance(TaskContainmentHierarchyFacade.Factory containmentFacadeFactory,
         TaskManagerConfig config) {
-      return new TaskManagerImpl(containmentFacadeFactory, config, null);
-    }
-
-    public static TaskManager newInstance(TaskContainmentHierarchyFacade.Factory containmentFacadeFactory,
-                                          TaskManagerConfig config, TaskUpdateBuilder.Factory taskUpdateBuilderFactory) {
-      return new TaskManagerImpl(containmentFacadeFactory, config, taskUpdateBuilderFactory);
+      return new TaskManagerImpl(containmentFacadeFactory, config);
     }
   }
 
@@ -265,5 +242,5 @@ public interface TaskManager {
 
   GPCalendarListener getCalendarListener();
 
-  TaskUpdateBuilder createTaskUpdateBuilder(Task task);
+  int getCurrentDateTasksNumber();
 }
