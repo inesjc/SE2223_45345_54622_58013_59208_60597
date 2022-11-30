@@ -84,7 +84,7 @@ public class TaskCurrentDateTasksNumberAction extends GPAction {
             public void actionPerformed(ActionEvent e) {
             }
         };
-        myUiFacade.createDialog(getComponent(),new Action[] { okAction }, "Todays number of tasks:").show();
+        myUiFacade.createDialog(getComponent(),new Action[] { okAction }, "Today's number of tasks:").show();
     }
 
     protected TaskManager getTaskManager() {
