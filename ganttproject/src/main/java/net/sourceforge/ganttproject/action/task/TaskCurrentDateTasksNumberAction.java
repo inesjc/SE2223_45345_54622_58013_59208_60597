@@ -24,35 +24,21 @@ import net.sourceforge.ganttproject.gui.UIFacade;
 import net.sourceforge.ganttproject.gui.UIUtil;
 import net.sourceforge.ganttproject.task.Task;
 import net.sourceforge.ganttproject.task.TaskManager;
+import java.util.List;
+
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Container;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
-import java.util.HashSet;
-import java.util.List;
-
-import javax.swing.AbstractListModel;
 import javax.swing.Action;
 import javax.swing.BorderFactory;
-import javax.swing.DefaultListCellRenderer;
-import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JList;
 import javax.swing.JPanel;
-import javax.swing.ListSelectionModel;
-import javax.swing.SwingUtilities;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
-import net.sourceforge.ganttproject.action.CancelAction;
 import net.sourceforge.ganttproject.action.OkAction;
-import net.sourceforge.ganttproject.language.GanttLanguage;
 
-import java.awt.event.ActionEvent;
-import java.util.List;
+
+
+
 
 public class TaskCurrentDateTasksNumberAction extends GPAction {
     private final IGanttProject myProject;
