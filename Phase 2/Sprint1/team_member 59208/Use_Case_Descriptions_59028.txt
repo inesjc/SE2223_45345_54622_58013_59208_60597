@@ -1,3 +1,10 @@
+-Actors-
+
+User: The main user that interacts with the application.
+Resource: A resource symbolizes a person who completes a task, but it can also mean other things, like equipment or materials.
+
+-Use Cases-
+
 Add New Resource: The user adds a new resource, in the resource diagram.
 Primary Actor: User   Secondary Actor: Resource
 
