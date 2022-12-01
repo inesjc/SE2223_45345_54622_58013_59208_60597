@@ -162,6 +162,7 @@ public interface TaskManager {
   @Deprecated
   public GanttTask createTask(int taskId);
 
+  boolean activateWarning();
 
   String encode(TimeDuration duration);
 

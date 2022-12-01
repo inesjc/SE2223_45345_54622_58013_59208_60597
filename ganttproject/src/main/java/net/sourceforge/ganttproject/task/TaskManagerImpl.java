@@ -314,6 +314,20 @@ public class TaskManagerImpl implements TaskManager {
     return root;
   }
 
+  public boolean activateWarning(){
+    boolean warning = false;
+    Calendar c = CalendarFactory.newCalendar();
+    c.add(Calendar.DATE, 3);
+    GanttCalendar gc = CalendarFactory.createGanttCalendar(c.getTime());
+    for (Task t : getTasks()) {
+      if (t.getEnd().compareTo(gc) < 0 && t.getCompletionPercentage() < 80){
+        warning = true;
+        break;
+      }
+    }
+    return warning;
+  }
+
   private void projectClosed() {
     myDependencyGraph.clear();
     myTaskMap.clear();
