@@ -51,4 +51,20 @@ public class CurrentDateTasksNumberTest extends TaskTestCase {
         int result = getTaskManager().getCurrentDateTasksNumber();
         assertEquals(2, result);
     }
+ 
+ /**
+ * Test for current date tasks number
+ *
+ * @author dbarashev (Simão Carrasco)
+ */
+ public void testCurrentDateTasksNumberAfterRemove() {
+        Task task1 = createTask();
+        Task task2 = createTask();
+        Task task3 = createTask();
+        int result = getTaskManager().getCurrentDateTasksNumber();
+        assertEquals(3, result);
+        getTaskManager().deleteTask(task3);
+        result=getTaskManager().getCurrentDateTasksNumber();
+        assertEquals(2, result);
+    }
 }
