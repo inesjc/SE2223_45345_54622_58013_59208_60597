@@ -1,1 +1,4 @@
 Use Case Diagrams Reviewlog:
+
+Name and Number: Inês Carvalho 45345
+Review: Use cases have a direct name with appropriate descriptions. Actors correctly identified.
