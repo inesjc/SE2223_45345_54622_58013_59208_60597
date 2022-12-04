@@ -301,7 +301,7 @@ public class ProjectUIFacadeImpl implements ProjectUIFacade {
   }
 
   private Component getComponent() { ;
-    final JLabel numberPanel = new JLabel("Uncompleted tasks ending soon.");
+    final JLabel numberPanel = new JLabel("You have uncompleted tasks to finish.");
     final JPanel contentPanel = new JPanel();
     contentPanel.add(numberPanel);
     JPanel rootPanel = new JPanel(new BorderLayout());
