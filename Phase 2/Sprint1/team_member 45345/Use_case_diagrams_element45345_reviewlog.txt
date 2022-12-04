@@ -4,6 +4,5 @@ Name and Number: Simão Carrasco 59208
 Diagram Name: Project Tab System
 Review: A good use case name for every functionality, and all the actors are correctly outside the system
 
-Name and Number:
-Diagram Name:
-Review:
+Name and Number: Pedro Catarino 60597
+Review: The diagrams are very complete and well constructed. The descriptions are also complete and very well explained.
