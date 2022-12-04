@@ -1,0 +1,4 @@
+Codebase Metrics Review Log
+
+Name and Number: Inês Carvalho 45345
+Review: Well summarized and concise review correctly identifying the code smells
