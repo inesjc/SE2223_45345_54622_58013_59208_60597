@@ -1,0 +1,4 @@
+Use Case Diagram Reviewlog:
+
+Reviewer: Pedro Catarino 60597
+Review: Correct description of the use cases, the diagram looks correct aswell.
